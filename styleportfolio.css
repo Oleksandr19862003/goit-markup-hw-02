@@ -1,10 +1,17 @@
 :root {
   --title-text-color: #212121;
   --secondary-text-color: #757575;
+  --common-white-color: #ffffff;
+  --accent-color: #2196f3;
+}
+* {
+  margin: 0px;
+  padding: 0px;
 }
 body {
   width: 1600px;
   height: 1880px;
+  background: var(--common-white-color);
   background-color: #e5e5e5;
   font-family: Roboto;
   text-decoration: none;
@@ -16,10 +23,11 @@ ul {
   list-style: none;
 }
 header {
-  background: #ffffff;
+  background: var(--common-white-color);
   display: flex;
   width: 1600px;
   height: 80px;
+  border: 1px solid #ececec;
 }
 /* Навигация */
 nav {
@@ -38,58 +46,61 @@ nav {
 }
 .navigation {
   display: flex;
-  margin-left: 93px;
+  margin-left: 43px;
   text-align: center;
   margin-top: 32px;
-  font-family: Roboto;
   font-style: normal;
   font-weight: 500;
 }
-.nav-link a {
-  margin-right: 50px;
+.nav-link {
+  padding-left: 50px;
   color: var(--title-text-color);
 }
-.nav-link-portfolio a {
+.nav-link .current {
+  color: var(--accent-color);
+}
+.navigation .nav-link.current {
+  color: var(--accent-color);
+}
+.nav-link {
+  padding-left: 45px;
   color: var(--title-text-color);
 }
-.nav-link-contacts a {
-  margin-left: 50px;
-  color: var(--title-text-color);
+.nav-link:hover,
+.nav-link:active {
+  color: var(--accent-color);
 }
-.nav-link-contacts:hover a,
-.nav-link-portfolio:hover a,
-.nav-link:hover a {
-  color: #2196f3;
-}
-.contact {
+.navigation .contact {
   display: flex;
   margin-left: 331px;
   margin-top: 32px;
 }
-.contact-mail {
-  color: var(--secondary-text-color);
+.contacts {
+  display: flex;
+  padding-left: 278px;
+  margin-top: 32px;
 }
+.contact-mail,
 .contact-tel {
-  margin-left: 50px;
   color: var(--secondary-text-color);
+  padding-left: 50px;
 }
 .contact-tel:hover,
 .contact-mail:hover {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 /* Портфолио */
 main {
-  width: 1600px;
-  height: 1360px;
-  background-color: #ffffff;
-}
-section {
+  background: var(--common-white-color);
+  margin: 0px;
+  padding: 0px;
 }
 /* Фильтры */
 .filters {
   display: flex;
   margin-left: 517px;
-  margin-top: 94px;
+  padding-top: 94px;
+  border-radius: 4px;
 }
 .filter-item button {
   margin-right: 8px;
@@ -97,11 +108,6 @@ section {
   padding-right: 22px;
   padding-bottom: 8px;
   padding-top: 8px;
-  width: auto;
-  height: auto;
-  left: 998px;
-  top: 180px;
-  font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -111,15 +117,12 @@ section {
   color: var(--title-text-color);
   background: #f5f4fa;
   border-radius: 4px;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border: none;
 }
 .filter-item:active button,
 .filter-item:hover button {
-  background: #2196f3;
-}
-button {
-  border: 0px;
+  background: var(--accent-color);
+  border: none;
 }
 /* Проэкты */
 .projects {
@@ -132,16 +135,22 @@ button {
   padding-top: 50px;
 }
 .project-item {
-  width: 370px;
-  height: 404px;
+  width: 322px;
+  height: 36px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
   flex-basis: calc(100% / 3 - 30px);
-  background-color: #ffffff;
+  background-color: var(--common-white-color);
   border: 1px solid #eeeeee;
   box-sizing: border-box;
-  padding: 0px;
+  margin-left: 15px;
+  color: var(--title-text-color);
 }
 .project:hover {
-  background-color: #2196f3;
+  background-color: var(--accent-color);
 }
 /* Подвал */
 footer {
@@ -155,12 +164,7 @@ footer {
   padding-left: 215px;
 }
 .logo-footer {
-  color: white;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 31px;
-  margin-left: 40px;
+  color: var(--common-white-color);
   width: 145px;
   height: 31px;
   left: 215px;
@@ -175,28 +179,30 @@ footer {
 
 .web {
   margin-top: 60px;
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .studio {
   color: var(--title-text-color);
 }
 .footer-address {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--common-white-color);
   margin-top: 20px;
-}
-.footer-contacts {
+  text-decoration: none;
 }
 .city-address {
-  margin-top: ;
+  margin-top: 20px;
   margin-bottom: 9px;
+  font-style: normal;
 }
-.footer-tel {
+.footer-tel a,
+.footer-mail a {
   margin-top: 9px;
   width: 231px;
   height: 21px;
-  left: 215px;
-  top: 2268px;
   font-family: Roboto;
+  font-style: normal;
+  font-style: normal;
+  font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
@@ -204,5 +210,4 @@ footer {
 }
 a {
   text-decoration: none;
-  color: var(--secondary-text-color);
 }
