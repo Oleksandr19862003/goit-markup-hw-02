@@ -32,7 +32,7 @@ header {
 /* Навигация */
 nav {
   display: flex;
-  margin-left: 230px;
+  margin-left: 250px;
 }
 .logo-top {
   margin-top: 24px;
@@ -44,13 +44,20 @@ nav {
   line-height: 31px;
   letter-spacing: 0.03em;
 }
+.web {
+  margin-top: 60px;
+  color: var(--accent-color);
+}
+.studio {
+  color: var(--title-text-color);
+}
 .navigation {
   display: flex;
   margin-left: 43px;
   text-align: center;
   margin-top: 32px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
 }
 .nav-link {
   padding-left: 50px;
@@ -65,6 +72,13 @@ nav {
 .nav-link {
   padding-left: 45px;
   color: var(--title-text-color);
+  width: 77px;
+  height: 16px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
 }
 .nav-link:hover,
 .nav-link:active {
@@ -84,6 +98,13 @@ nav {
 .contact-tel {
   color: var(--secondary-text-color);
   padding-left: 50px;
+  width: 122px;
+  height: 16px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
 }
 .contact-tel:hover,
 .contact-mail:hover {
@@ -129,12 +150,23 @@ main {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  width: 1170px;
+  width: 1200px;
   height: 1272px;
   margin-left: 215px;
   padding-top: 50px;
+  padding-bottom: 94px;
 }
 .project-item {
+  width: 370px;
+  height: 404px;
+  background: var(--common-white-color);
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  margin-left: 30px;
+  text-align: left;
+  padding-bottom: 30px;
+}
+.project-title {
   width: 322px;
   height: 36px;
   font-style: normal;
@@ -142,15 +174,20 @@ main {
   font-size: 18px;
   line-height: 36px;
   letter-spacing: 0.06em;
-  flex-basis: calc(100% / 3 - 30px);
-  background-color: var(--common-white-color);
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
-  margin-left: 15px;
   color: var(--title-text-color);
+  padding-top: 20px;
+  padding-left: 24px;
 }
-.project:hover {
-  background-color: var(--accent-color);
+.project-dicrip {
+  width: 322px;
+  height: 30px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  padding-left: 24px;
 }
 /* Подвал */
 footer {
@@ -161,12 +198,11 @@ footer {
 }
 .footer-content {
   padding-top: 60px;
-  padding-left: 215px;
+  margin-left: 235px;
 }
 .logo-footer {
   color: var(--common-white-color);
   width: 145px;
-  height: 31px;
   left: 215px;
   top: 24px;
   font-family: Raleway;
@@ -175,14 +211,6 @@ footer {
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
-}
-
-.web {
-  margin-top: 60px;
-  color: var(--accent-color);
-}
-.studio {
-  color: var(--title-text-color);
 }
 .footer-address {
   color: var(--common-white-color);

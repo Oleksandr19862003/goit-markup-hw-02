@@ -39,8 +39,14 @@ nav {
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
-  line-height: 31px;
   letter-spacing: 0.03em;
+}
+.web {
+  margin-top: 60px;
+  color: var(--accent-color);
+}
+.studio {
+  color: var(--title-text-color);
 }
 .navigation {
   display: flex;
@@ -64,6 +70,13 @@ nav {
 .nav-link {
   padding-left: 45px;
   color: var(--title-text-color);
+  width: 68px;
+  height: 16px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
 }
 .nav-link:hover,
 .nav-link:active {
@@ -83,6 +96,13 @@ nav {
 .contact-tel {
   color: var(--secondary-text-color);
   padding-left: 50px;
+  width: 122px;
+  height: 16px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
 }
 .contact-tel:hover,
 .contact-mail:hover {
@@ -100,7 +120,6 @@ main {
   background: #2f303a;
 }
 .main-discription {
-  position: absolute;
   width: 696px;
   height: 120px;
   font-weight: 900;
@@ -110,24 +129,24 @@ main {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--common-white-color);
-  margin-top: 200px;
-  margin-left: 452px;
+  padding-top: 200px;
+  margin-left: 482px;
 }
 .order-service {
-  position: absolute;
   margin-left: 732px;
-  top: 430px;
+  margin-top: 430px;
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
-  display: flex;
   color: var(--common-white-color);
   background-color: var(--accent-color);
   margin-top: 40px;
   padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 32px;
   padding-right: 32px;
-  box-shadow: ivory;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 .order-service:active {
   background: #af7474;
@@ -168,7 +187,6 @@ button {
   color: #757575;
   margin-left: 30px;
   left: 215px;
-  font-family: Roboto;
   letter-spacing: 0.03em;
 }
 .details-items {
@@ -185,7 +203,6 @@ button {
 .what-we-do-title {
   margin-top: 94px;
   text-align: center;
-  margin-top: 94px;
   height: 42px;
   left: 612px;
   top: 969px;
@@ -194,7 +211,7 @@ button {
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--title-text-color);
 }
 .what-we-do {
   display: flex;
@@ -219,7 +236,7 @@ button {
   font-size: 36px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--title-text-color);
   margin-bottom: 50px;
 }
 .team {
@@ -249,7 +266,6 @@ button {
 .team-member {
   padding-top: 30px;
   font-style: normal;
-  font-family: Roboto;
   font-weight: bold;
   font-weight: 500;
   font-size: 16px;
@@ -265,10 +281,8 @@ button {
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.03em;
-  text-align: center;
   color: var(--secondary-text-color);
 }
-
 /* Подвал */
 footer {
   text-decoration: none;
@@ -283,7 +297,6 @@ footer {
 .logo-footer {
   color: var(--common-white-color);
   width: 145px;
-  height: 31px;
   left: 215px;
   top: 24px;
   font-family: Raleway;
@@ -292,14 +305,6 @@ footer {
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
-}
-
-.web {
-  margin-top: 60px;
-  color: var(--accent-color);
-}
-.studio {
-  color: var(--title-text-color);
 }
 .footer-address {
   color: var(--common-white-color);
@@ -316,7 +321,6 @@ footer {
   margin-top: 9px;
   width: 231px;
   height: 21px;
-  font-family: Roboto;
   font-style: normal;
   font-style: normal;
   font-weight: normal;
