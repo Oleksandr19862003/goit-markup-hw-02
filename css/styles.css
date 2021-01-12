@@ -107,7 +107,7 @@ main {
 .section-hero {
   width: 1600px;
   height: 600px;
-  background-image: url(./images/Bg.jpg);
+  background-image: url(../images/Bg.jpg);
   margin-top: -30px;
 }
 .main-discription {
