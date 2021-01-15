@@ -376,4 +376,6 @@ a {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   padding-left: 24px;
+  padding-bottom: 20px;
+  padding-top: 4px;
 }
