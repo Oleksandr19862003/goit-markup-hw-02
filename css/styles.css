@@ -1,7 +1,7 @@
 :root {
   --title-text-color: #212121;
   --secondary-text-color: #757575;
-  --common-white-color: #ffffff;
+  --common-lite-color: #ffffff;
   --accent-color: #2196f3;
 }
 * {
@@ -9,51 +9,46 @@
   padding: 0px;
 }
 body {
-  width: 1600px;
-  background: #e5e5e5;
-  font-family: Roboto;
+  background: var(--common-lite-color);
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   text-decoration: none;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-top: 600px;
+  padding-left: 40px;
   padding-bottom: 40px;
 }
 ul {
   list-style: none;
 }
 header {
-  background: var(--common-white-color);
+  background: var(--common-lite-color);
   display: flex;
   width: 1600px;
   height: 80px;
-  border: 1px solid #ececec;
+  border: 0% solid #ececec;
   letter-spacing: 0.02em;
 }
 nav {
   display: flex;
-  margin-left: 236px;
+  padding-left: 236px;
 }
 .logo-top {
   margin-top: 24px;
-  font-family: Raleway;
-  font-weight: bold;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
 .web {
-  margin-top: 60px;
   color: var(--accent-color);
 }
 .navigation {
   display: flex;
   padding-left: 64px;
   text-align: center;
-  margin-top: 32px;
-  font-family: Roboto;
+  padding-top: 32px;
   font-weight: 500;
 }
 .nav-link {
@@ -68,6 +63,7 @@ nav {
 }
 .nav-link {
   padding-left: 46px;
+  padding-top: 32px;
   color: var(--title-text-color);
   width: 68px;
   font-weight: 500;
@@ -78,15 +74,15 @@ nav {
 .nav-link:active {
   color: var(--accent-color);
 }
-.navigation .contacts {
+.navigation {
   display: flex;
-  margin-left: 332px;
-  margin-top: 32px;
+  padding-left: 94px;
+  padding-top: 32px;
 }
 .contacts {
-  display: inherit;
-  padding-left: 278px;
-  margin-top: 32px;
+  display: flex;
+  padding-left: 250px;
+  padding-top: 32px;
 }
 .contact-mail,
 .contact-tel {
@@ -100,9 +96,6 @@ nav {
 .contact-tel:hover,
 .contact-mail:hover {
   color: var(--accent-color);
-}
-main {
-  background: var(--common-white-color);
 }
 /* Секция Hero */
 .section-hero {
@@ -119,16 +112,16 @@ main {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--common-white-color);
+  color: var(--common-lite-color);
   padding-top: 200px;
   margin-left: 482px;
 }
 .order-service {
   margin-left: 732px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
-  color: var(--common-white-color);
+  color: var(--common-lite-color);
   background-color: var(--accent-color);
   padding-top: 10px;
   padding-bottom: 10px;
@@ -147,7 +140,6 @@ main {
   width: 1170px;
   left: 216px;
   margin-top: 94px;
-  margin-bottom: 94px;
 }
 .features-title {
   text-align: center;
@@ -156,7 +148,7 @@ main {
 .features {
   display: flex;
   flex-direction: row;
-  color: var(--common-white-color);
+  color: var(--common-lite-color);
   width: 1170px;
   margin-left: 186px;
   font-size: 14px;
@@ -164,59 +156,55 @@ main {
 }
 .details {
   width: 270px;
-  top: 800px;
-  color: #757575;
+  color: var(--secondary-text-color);
   margin-left: 30px;
   left: 216px;
   letter-spacing: 0.03em;
 }
 .details-items {
+  padding-bottom: 10px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.142;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-text-color);
-  padding-bottom: 10px;
 }
 /* Чем мы занимаемся */
 .what-we-do-title {
-  margin-top: 94px;
-  text-align: center;
+  padding-top: 94px;
+  padding-left: 612px;
   height: 42px;
-  left: 612px;
-  top: 970px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.166;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
 .what-we-do {
   display: flex;
   text-align: center;
-  margin-left: 216px;
-  margin-top: 50px;
+  padding-left: 216px;
+  padding-top: 50px;
+  margin-bottom: 94px;
 }
 .what-we-do-items {
   margin-right: 30px;
 }
 /* Наша команда */
 .team-section {
-  margin-top: 94px;
   width: 1600px;
   background: #f5f4fa;
 }
 .team-title {
   padding-top: 94px;
-  font-weight: bold;
+  margin-bottom: 50px;
+  font-weight: 700;
   font-size: 36px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-  margin-bottom: 50px;
 }
 .team {
   display: flex;
@@ -268,18 +256,15 @@ footer {
   padding-left: 236px;
 }
 .logo-footer {
-  color: var(--common-white-color);
-  width: 146px;
-  left: 216px;
-  top: 24px;
-  font-family: Raleway;
-  font-weight: bold;
+  color: var(--common-lite-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.153;
   letter-spacing: 0.03em;
 }
 .footer-address {
-  color: var(--common-white-color);
+  color: var(--common-lite-color);
   margin-top: 20px;
   text-decoration: none;
   font-style: inherit;
@@ -292,7 +277,6 @@ footer {
 .footer-mail {
   margin-top: 10px;
   width: 230px;
-  font-weight: normal;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
@@ -303,7 +287,7 @@ footer {
   color: var(--accent-color);
 }
 /* Портфолио */
-/* Фильтры */
+/* Фильтры-начало */
 .portfolio {
   width: 1200px;
 }
@@ -334,12 +318,13 @@ footer {
 .filter-item:hover button {
   background: var(--accent-color);
   border: none;
-  color: var(--common-white-color);
+  color: var(--common-lite-color);
 }
+/* Фильтры-конец */
 a {
   text-decoration: none;
 }
-/* Проэкты */
+/* Проэкты-начало*/
 .projects {
   display: flex;
   flex-wrap: wrap;
@@ -351,7 +336,7 @@ a {
 }
 .project-item {
   width: 370px;
-  background: var(--common-white-color);
+  background: var(--common-lite-color);
   border: 1px solid #eeeeee;
   box-sizing: border-box;
   margin-left: 30px;
@@ -360,7 +345,7 @@ a {
 }
 .project-title {
   width: 322px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -378,3 +363,4 @@ a {
   padding-bottom: 20px;
   padding-top: 4px;
 }
+/* Проэкты-конец */
